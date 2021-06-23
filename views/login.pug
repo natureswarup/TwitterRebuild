@@ -1,0 +1,18 @@
+extends layouts/login-layout.pug
+
+block content
+
+    .loginContainer 
+        h1 Login to your account 
+        form(action="", method="post") 
+            p.errorMessage #{errorMessage}
+
+            //- input#username(type="text", name="logUsername", placeholder='Username or Email', value=logUsername, required='')
+            //- input#password(type="password", name="logPassword", placeholder='Password', required='')
+
+
+
+            input#username(type="text", name="logUsername", placeholder='Username or Email', value='test@gmail.com', required='')
+            input#password(type="password", name="logPassword", placeholder='Password', value='Temp1234', required='')
+            input(type="submit", value="Login")
+        a(href="/register") Need an account? Register here. 
